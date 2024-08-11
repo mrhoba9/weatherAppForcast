@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<title>Weather App</title>
+		<link rel="Icon" href="https://img.freepik.com/premium-psd/sunny-rainy-cloudy-day-weather-forecast-icon-illustration_47987-10695.jpg">
+		<link rel="stylesheet" href="weather.css" />
+	</head>
+	<body>
+        <div class="topic">
+            Weather Forecast
+        </div>
+		<div class="container" id="container">
+			<div class="div1">
+				<i class="material-symbols-outlined locIcon">location_on</i>
+				<button class="material-symbols-outlined SeaIcon" id="searchBtn">search</button>
+				<input class="searchInput"type="text"id="searchInput"placeholder="Search City" />
+			</div>
+
+			<div class="div2" id="weather">
+				<p class="country-city-text"></p>
+				<img id="weather-image" src="earth.png" alt="Weather Icon"/>
+				<p class="temperature" id="temp">0<sup>°C</sup></p>
+				<p class="description" id="desc">No City Mentioned</p>
+			</div>
+
+			<div class="div3" id="weather-info">
+				<div class="div3-1"id="subdiv1">
+					<i class="material-symbols-outlined iconn">water</i>
+					<div class="1-1">
+						<p class="disc" id="Humidity-percent">0%</p>
+						<p class="disc1">Humidity</p>
+					</div>
+				</div>
+
+				<div class="div3-2" id="subdiv2">
+					<i class="material-symbols-outlined iconn">air</i>
+					<div class="2-2">
+						<p class="disc" id="wind-speed">0 Km/h</p>
+						<p class="disc1">Wind Speed</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="temperature-advice">
+			<p>Remember to stay hydrated and avoid excessive heat exposure!</p>
+		</div>
+		<script src="weather.js"></script>
+	</body>
+</html>
